@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="208dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/abeezee"
+        android:text="M4 Ultra n3"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="208dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/abeezee"
+        android:text="Secure Enclave 2.0 + Face ID for Mac"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="534dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="208dp"
+        android:layout_height="18dp"
+        android:fontFamily="@font/abeezee"
+        android:text="A full battery life."
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="384dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="Proporties"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.457" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="415dp"
+        android:layout_height="64dp"
+        android:background="#839095"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="MacBook Air M4"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Redefining Performance"
+        android:textAlignment="textStart"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="17dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="180dp"
+        android:layout_height="148dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/m4"
+        tools:layout_editor_absoluteY="157dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="258dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/bruno_ace"
+        android:text="TECHNOLOGİA"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="72dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/battery" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/cpu"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/grey"
+        android:text="BUY NOW!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="44dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/security"
+        tools:layout_editor_absoluteX="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
